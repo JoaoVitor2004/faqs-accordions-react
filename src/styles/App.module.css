@@ -6,31 +6,6 @@
     z-index: -1;
 }
 
-.containerTitle {
-    display: flex;
-    gap: 20px; 
-    margin-bottom: 30px;
-}
-
-.star {
-    width: 30px;
-    max-width: 100%;
-}
-
-.title {
-    color: #2E1A31;
-    font-size: 45px;
-    font-weight: bold;
-}
-
-.faq {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
 .faqs {
     display: flex;
     flex-direction: column;

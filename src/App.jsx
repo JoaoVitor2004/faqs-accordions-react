@@ -6,6 +6,7 @@ import styles from "./styles/App.module.css"
 import IconStar from "./assets/images/icon-star.svg"
 import IconMinus from "./assets/images/icon-minus.svg"
 import Background from "./assets/images/background-pattern-desktop.svg"
+import About from "./components/About";
 
 export default function App() {
 
@@ -13,17 +14,7 @@ export default function App() {
     <Wrapper>
       <img className={styles.background} src={Background} alt="backgrund" />
       <Container>
-        <div className={styles.containerTitle}>
-          <img className={styles.star} src={IconStar} alt="icon star" />
-          <h1 className={styles.title}>FAQs</h1>
-        </div>
-        <div className={styles.faq}>
-          <p>What is Frontend Mentor, and how will it help me?</p>
-          <img src={IconMinus} alt="icon minus" />
-        </div>
-        <p style={{ marginBottom: "40px", color: "hsl(292, 16%, 49%)" }}>Frontend Mentor offers realistic coding challenges to help developers improve their
-          frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
-          all levels and ideal for portfolio building.</p>
+        <About iconStar={IconStar} iconMinus={IconMinus}/>
         <ul className={styles.faqs}>
           <li>
             <Faqs
